@@ -9,11 +9,11 @@ Project Steps
 1. Explore the data: Checked data types, missing values, and distributions (histograms) for numeric columns.
 2. Check relationships: Built a correlation matrix and heatmap to identify which variables relate to Fare. Pclass, Embarked, SibSp, Parch showed the strongest relationship.
 3. Clean the data:
-  3. 1. Filled missing Age with median, Embarked with mode
-  3. 2. Dropped Cabin (too many missing values), plus PassengerId, Name, Ticket
-  3. 3. Capped extreme Fare outliers at the 99th percentile
-  3. 4. Handled missing/zero Fare values in the test set using training-set statistics (avoiding data leakage)
-  3. 5. Encode categorical variables
+  - Filled missing Age with median, Embarked with mode
+  - Dropped Cabin (too many missing values), plus PassengerId, Name, Ticket
+  - Capped extreme Fare outliers at the 99th percentile
+  - Handled missing/zero Fare values in the test set using training-set statistics (avoiding data leakage)
+  - Encode categorical variables
 
 4. Fit the model: Trained a LinearRegression model, first using Pclass alone, then expanded with SibSp, Parch, and Embarked.
 5. Evaluate performance: Measured RMSE and R² on the held-out test set.
